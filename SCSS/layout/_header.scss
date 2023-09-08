@@ -1,0 +1,91 @@
+
+.header{
+    display: flex;
+    padding: 0px 40px;
+    align-items: center;
+    gap: 320px;
+    align-self: stretch;
+}
+
+.search{
+    border: 2px;
+    border-radius: 8px;
+    display: flex;
+    padding: 20px 30px;
+    align-items: center;
+    gap: 20px;
+    flex: 1 0 0;
+    border-style: solid;
+}
+
+.hotline{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 24px;
+    gap: 10px;
+    font-family: fw-500;
+}
+
+.text-search{
+    flex: 1 0 0;
+    color: var(--bleck, #303030);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border: none;
+    font-family: fw-500;
+}
+
+.Logo{
+    color:#303030;
+    font-size: 48px;
+    font-family: fw-500;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.fa-solid.fa-phone{
+    color: var#303030;
+    font-size: 28px;
+    font-weight: 900;
+    
+}
+
+.nav{
+    display: flex;
+    padding: 20px;
+    align-items: flex-start;
+    align-self: stretch;
+    background: #162E4D;
+}
+
+.fa-solid.fa-bars{
+    color: white;
+    font-family: Font Awesome 6 Free;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 1000;
+    line-height: normal;
+    width: 50px;
+}
+
+.nav-item{
+    width: max-content;
+    margin-left: 50px;
+}
+
+.img-fluid{
+    width: 100%;
+}
+
+.nav-item, .navbar-brand{
+    color: white;
+    font-family: fw-500;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: normal;
+}
+

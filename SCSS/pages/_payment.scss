@@ -1,0 +1,300 @@
+.mainPayment{
+    display: flex;
+    padding: 0px 40px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 50px;
+    align-self: stretch;
+}
+
+.ModeOfPayment{
+    display: flex;
+    padding: 0px 40px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 50px;
+    align-self: stretch;
+}
+
+.ModeOfPayment-title{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    align-self: stretch;
+}
+
+.ModeOfPayment-title p{
+    color: var(--bleck, #303030);
+    font-family: fw-500;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.ModeOfPayment-title h2{
+    align-self: stretch;
+    color: var(--bleck, #303030);
+    font-family: fw-500;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.paymentMutipleChoices-1{
+    display: flex;
+    width: 1840px;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: space-between;
+    flex-wrap: wrap;
+}
+
+.paymentChoice{
+    display: flex;
+    width: 602px;
+    padding: 30px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    background: var(--hite, #FFF);
+    box-shadow: -1px 1px 2px 0px rgba(0, 0, 0, 0.25);
+}
+
+.paymentChoice-title{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    align-self: stretch;
+}
+
+.paymentChoice-title h2{
+    flex: 1 0 0;
+    color: #162E4C;
+    font-family: fw-500;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.paymentChoice-title img{
+    width: 54px;
+    height: 41.929px;
+    flex-shrink: 0;
+}
+
+.paymentChoice p{
+    align-self: stretch;
+    color: var(--bleck, #303030);
+    font-family: fw-500;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.paymentMutipleChoices-2{
+    display: flex;
+    width: 1840px;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: space-between;
+    column-gap: 41px;
+    flex-wrap: wrap;
+}
+
+.byCash{
+    display: flex;
+    padding: 0px 40px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 50px;
+    align-self: stretch;
+}
+
+.byCash-title{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    align-items: flex-start;
+    gap: 10px;
+    align-self: stretch;
+    border-radius: 15px;
+    background: var(--hite, #FFF);
+}
+
+.wireTransfer{
+    display: flex;
+    padding: 0px 40px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 50px;
+    align-self: stretch;
+}
+
+.wireTransferDetail{
+    display: flex;
+    padding: 30px;
+    align-items: flex-start;
+    gap: 40px;
+    align-self: stretch;
+    border-radius: 15px;
+    background: var(--hite, #FFF);
+}
+
+.thumbnail-wireTransfer{
+    width: 490px;
+    height: 557px;
+}
+
+.thumbnail-wireTransfer .img{
+    width: 490px;
+    height: 557px;
+    flex-shrink: 0;
+    background: url(/Img/image\ 34.png);
+}
+
+.wireTransfer-thumbnail-background{
+    position: absolute;
+    margin: 25px 0 0px  230px;
+    display: flex;
+    width: 249px;
+    height: 500px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 30px;
+    background: rgba(37, 37, 37, 0.60);
+
+}
+
+.wireTransfer-img{
+    display: flex;
+    padding: 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-radius: 15px;
+    background: var(--hite, #FFF);
+}
+
+.wireTransfer-img i{
+    color: #1ABD00;
+    text-align: center;
+    font-family: Font Awesome 6 Free;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.text-status{
+    color: #1ABD00;
+    text-align: center;
+    font-family: fw-500;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.ok{
+    color: var(--bleck, #303030);
+    text-align: center;
+    font-family: fw-500;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.momo{
+    display: flex;
+    padding: 0px 40px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+    align-self: stretch;
+}
+
+.momoDetail{
+    display: flex;
+    padding: 30px;
+    align-items: center;
+    gap: 40px;
+    align-self: stretch;
+    border-radius: 15px;
+    background: var(--hite, #FFF);  
+}
+
+.momo-descript{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    flex: 1 0 0;
+}
+
+.zaloPay{
+    display: flex;
+    padding: 0px 40px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+    align-self: stretch;
+}
+
+.zaloPayDetail{
+    display: flex;
+    padding: 30px;
+    align-items: center;
+    gap: 40px;
+    align-self: stretch;
+    border-radius: 15px;
+    background: var(--hite, #FFF);
+}
+
+.zaloPayDescript{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    flex: 1 0 0;
+}
+
+.exchangeOfGoods{
+    display: flex;
+    padding: 0px 40px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+    align-self: stretch;
+}
+
+.exchangeOfGoodsDetail{
+    display: flex;
+    padding: 30px;
+    align-items: center;
+    gap: 40px;
+    align-self: stretch;
+    border-radius: 15px;
+    background: var(--hite, #FFF);
+}
+
+.exchangeOfGoodsDescript{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    flex: 1 0 0;
+}

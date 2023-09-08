@@ -1,0 +1,26 @@
+.nav-pagination{
+    display: flex;
+    padding: 0px 20px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    align-self: stretch;
+}
+
+.pagination{  
+    display: flex;
+    padding: 15px 20px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.page-item a{
+    color: #FFF;
+    font-family: fw-500;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background: #162E4D;
+}
