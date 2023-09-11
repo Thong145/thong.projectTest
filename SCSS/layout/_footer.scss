@@ -5,65 +5,72 @@
     gap: 10px;
     align-self: stretch;
     background:#303030;
+
+    .intro{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        flex: 1 0 0;
+
+        h2{
+            color: #FFF;
+            font-family: fw-500;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            text-transform: capitalize;
+        }
+
+        a{
+            display: flex;
+            gap: 10px;
+            color: #FFF;
+            font-family: fw-500;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+    }
+
+    .support{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        flex: 1 0 0;
+
+        h2{
+            color:#FFF;
+            font-family: fw-500;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            text-transform: capitalize;
+        }
+
+        a{
+            display: flex;
+            gap: 10px;
+            color: #FFF;
+            font-family: fw-500;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+    }
+
+    .img-footer{
+        flex: 1 0 0;
+        align-self: stretch;
+        background: url("/Img/img-footer.jpg"), lightgray 50%;
+    }
 }
 
-.intro{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 20px;
-    flex: 1 0 0;
+.fa-phone, .fa-house, .fa-envelope, .fa-clock, .fa-gears, .fa-question{
+    width: 25px;
 }
-
-.intro h2{
-    color: #FFF;
-    font-family: fw-500;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    text-transform: capitalize;
-}
-
-.intro a{
-    color: #FFF;
-    font-family: fw-500;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-}
-
-.support{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 20px;
-    flex: 1 0 0;
-}
-
-.support h2{
-    color:#FFF;
-    font-family: fw-500;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    text-transform: capitalize;
-}
-
-.support a{
-    color: #FFF;
-    font-family: fw-500;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-}
-
-.img-footer{
-    flex: 1 0 0;
-    align-self: stretch;
-    background: url("/Img/img-footer.jpg"), lightgray 50%;
-}
-
