@@ -90,3 +90,18 @@
         }
     }
 }
+
+h2{
+    display: flex;
+    padding: 0px 40px;
+    align-items: flex-start;
+    gap: 10px;
+    align-self: stretch;
+    color: var(--bleck, #303030);
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    flex: 1 0 0;
+}
