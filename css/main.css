@@ -1640,14 +1640,16 @@ html {
   flex: 1 0 0;
 }
 
-h2 {
+.moreVideo-title {
   display: flex;
   padding: 0px 40px;
   align-items: flex-start;
   gap: 10px;
   align-self: stretch;
+}
+.moreVideo-title h2 {
   color: var(--bleck, #303030);
-  font-family: Inter;
+  font-family: fw-500;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
