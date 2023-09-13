@@ -1,0 +1,92 @@
+.videoIsViewing{
+    width: 100%;
+    display: flex;
+    padding: 0px 40px;
+    align-items: flex-start;
+    gap: 20px;
+    align-self: stretch;
+
+    &__main{
+        display: flex;
+        width: 60%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+
+        img{
+            width: 100%;
+        }
+        h2{
+            color: var(--bleck, #303030);
+            font-family: Inter;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            align-self: stretch;
+        }
+        p{
+            color: var(--bleck, #303030);
+            font-family: Inter;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            align-self: stretch;
+        }
+    }
+
+    &__timeLines{
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        align-self: stretch;
+
+        &__details{
+            display: flex;
+            width: 100%;
+            align-items: flex-start;
+            gap: 20px;
+
+            a{
+                width: 100%;
+                img{
+                    width: 244px;
+                }
+            }
+
+            .videoIsViewing__timeLines__title{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+                flex: 1 0 0;
+                align-self: stretch;
+
+                a{
+                    h2{
+                        color: var(--bleck, #303030);
+                        font-family: Inter;
+                        font-size: 24px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: normal;
+                        align-self: stretch;
+                    }
+                }
+                p{
+                    color: var(--bleck, #303030);
+                    font-family: Inter;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    width: 344px;
+                    flex: 1 0 0;                   
+                }
+            }
+        }
+    }
+}

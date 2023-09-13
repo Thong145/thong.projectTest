@@ -57,3 +57,34 @@
         }
     }
 }
+
+.WarrantyPolicy-main{
+    .brands{
+        .brands-detail{
+            img:hover{
+                transform: scale(1.2);
+                transition: transform .2s;
+            }
+        }
+    }
+}
+
+.category-video{
+    .category-video__background:hover{
+        background-color: white;
+        a{
+            color: var(--bleck, #303030);
+        }
+    }
+}
+
+.videos{
+    .videos__details{
+        a{
+            img:hover{
+                transform: scale(1.1);
+                transition: transform .2s;
+            }
+        }
+    }
+}

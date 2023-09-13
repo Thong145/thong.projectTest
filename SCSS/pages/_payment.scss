@@ -1,310 +1,389 @@
-body{
-    display: flex;
-    max-width: 100%;
-    padding-top: 30px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 30px;
-    background: var(--main-background, #F2F2F2);
-}
+// body{
+//     display: flex;
+//     max-width: 100%;
+//     padding-top: 30px;
+//     flex-direction: column;
+//     align-items: flex-start;
+//     gap: 30px;
+//     background: var(--main-background, #F2F2F2);
+// }
 
 .mainPayment{
+    width: 100%;
     display: flex;
     padding: 0px 40px;
     flex-direction: column;
     align-items: flex-start;
     gap: 50px;
     align-self: stretch;
-}
 
-.ModeOfPayment{
-    display: flex;
-    padding: 0px 40px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 50px;
-    align-self: stretch;
-}
+    .ModeOfPayment{
+        display: flex;
+        padding: 0px 40px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 50px;
+        align-self: stretch;
 
-.ModeOfPayment-title{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 20px;
-    align-self: stretch;
-}
+        .ModeOfPayment-title{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 20px;
+            align-self: stretch;
 
-.ModeOfPayment-title p{
-    color: var(--bleck, #303030);
-    font-family: fw-500;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
+            p{
+                color: var(--bleck, #303030);
+                font-family: fw-500;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
 
-.ModeOfPayment-title h2{
-    align-self: stretch;
-    color: var(--bleck, #303030);
-    font-family: fw-500;
-    font-size: 28px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-}
+            h2{
+                align-self: stretch;
+                color: var(--bleck, #303030);
+                font-family: fw-500;
+                font-size: 28px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+            }
+        }
 
-.paymentMutipleChoices-1{
-    display: flex;
-    width: 1840px;
-    justify-content: space-between;
-    align-items: flex-start;
-    align-content: space-between;
-    flex-wrap: wrap;
-}
+        .paymentMutipleChoices-1{
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            align-items: flex-start;
+            align-content: space-between;
+            flex-wrap: wrap;
 
-.paymentChoice{
-    display: flex;
-    width: 602px;
-    padding: 30px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 20px;
-    flex-shrink: 0;
-    border-radius: 15px;
-    background: var(--hite, #FFF);
-    box-shadow: -1px 1px 2px 0px rgba(0, 0, 0, 0.25);
-}
+            .paymentChoice{
+                display: flex;
+                width: 30%;
+                padding: 30px;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 20px;
+                flex-shrink: 0;
+                border-radius: 15px;
+                background: var(--hite, #FFF);
+                box-shadow: -1px 1px 2px 0px rgba(0, 0, 0, 0.25);
 
-.paymentChoice-title{
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    align-self: stretch;
-}
+                svg{
+                    width: 100%;
+                }
 
-.paymentChoice-title h2{
-    flex: 1 0 0;
-    color: #162E4C;
-    font-family: fw-500;
-    font-size: 28px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-}
+                a{
+                    align-self: stretch;
+                    color: var(--bleck, #303030);
+                    font-family: fw-500;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+                
 
-.paymentChoice-title img{
-    width: 54px;
-    height: 41.929px;
-    flex-shrink: 0;
-}
+                p{
+                    align-self: stretch;
+                    color: var(--bleck, #303030);
+                    font-family: fw-500;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
 
-.paymentChoice p{
-    align-self: stretch;
-    color: var(--bleck, #303030);
-    font-family: fw-500;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
+                .paymentChoice-title{
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+                    align-self: stretch;
 
-.paymentMutipleChoices-2{
-    display: flex;
-    width: 1840px;
-    justify-content: center;
-    align-items: flex-start;
-    align-content: space-between;
-    column-gap: 41px;
-    flex-wrap: wrap;
-}
+                    h2{
+                        flex: 1 0 0;
+                        color: #162E4C;
+                        font-family: fw-500;
+                        font-size: 28px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: normal;
+                    }
 
-.byCash{
-    display: flex;
-    padding: 0px 40px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 50px;
-    align-self: stretch;
-}
+                    img{
+                        width: 54px;
+                        height: 41.929px;
+                        flex-shrink: 0;
+                    }
+                }
+            }
+            
+        }
 
-.byCash-title{
-    display: flex;
-    flex-direction: column;
-    padding: 30px;
-    align-items: flex-start;
-    gap: 10px;
-    align-self: stretch;
-    border-radius: 15px;
-    background: var(--hite, #FFF);
-}
+        .paymentMutipleChoices-2{
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            align-items: flex-start;
+            align-content: space-between;
+            column-gap: 41px;
+            flex-wrap: wrap;
 
-.wireTransfer{
-    display: flex;
-    padding: 0px 40px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 50px;
-    align-self: stretch;
-}
+            .paymentChoice{
+                display: flex;
+                width: 602px;
+                padding: 30px;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 20px;
+                flex-shrink: 0;
+                border-radius: 15px;
+                background: var(--hite, #FFF);
+                box-shadow: -1px 1px 2px 0px rgba(0, 0, 0, 0.25);
 
-.wireTransferDetail{
-    display: flex;
-    padding: 30px;
-    align-items: flex-start;
-    gap: 40px;
-    align-self: stretch;
-    border-radius: 15px;
-    background: var(--hite, #FFF);
-}
+                a{
+                    align-self: stretch;
+                    color: var(--bleck, #303030);
+                    font-family: fw-500;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
 
-.thumbnail-wireTransfer{
-    width: 490px;
-    height: 557px;
-}
+                p{
+                    align-self: stretch;
+                    color: var(--bleck, #303030);
+                    font-family: fw-500;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
 
-.thumbnail-wireTransfer .img{
-    width: 490px;
-    height: 557px;
-    flex-shrink: 0;
-    background: url(/Img/image\ 34.png);
-}
+                .paymentChoice-title{
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+                    align-self: stretch;
 
-.wireTransfer-thumbnail-background{
-    position: absolute;
-    margin: 25px 0 0px  230px;
-    display: flex;
-    width: 249px;
-    height: 500px;
-    padding: 10px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    flex-shrink: 0;
-    border-radius: 30px;
-    background: rgba(37, 37, 37, 0.60);
+                    h2{
+                        flex: 1 0 0;
+                        color: #162E4C;
+                        font-family: fw-500;
+                        font-size: 28px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: normal;
+                    }
 
-}
+                    img{
+                        width: 54px;
+                        height: 41.929px;
+                        flex-shrink: 0;
+                    }
+                }
+            }
+        }
 
-.wireTransfer-img{
-    display: flex;
-    padding: 30px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    border-radius: 15px;
-    background: var(--hite, #FFF);
-}
+    }
 
-.wireTransfer-img i{
-    color: #1ABD00;
-    text-align: center;
-    font-family: Font Awesome 6 Free;
-    font-size: 80px;
-    font-style: normal;
-    font-weight: 900;
-    line-height: normal;
-}
+    .byCash{
+        display: flex;
+        padding: 0px 40px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 50px;
+        align-self: stretch;
 
-.text-status{
-    color: #1ABD00;
-    text-align: center;
-    font-family: fw-500;
-    font-size: 28px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-}
-.ok{
-    color: var(--bleck, #303030);
-    text-align: center;
-    font-family: fw-500;
-    font-size: 28px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-}
+        .byCash-title{
+            display: flex;
+            flex-direction: column;
+            padding: 30px;
+            align-items: flex-start;
+            gap: 10px;
+            align-self: stretch;
+            border-radius: 15px;
+            background: var(--hite, #FFF);
+        }
+    }
 
-.momo{
-    display: flex;
-    padding: 0px 40px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 50px;
-    align-self: stretch;
-}
+    .wireTransfer{
+        display: flex;
+        padding: 0px 40px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 50px;
+        align-self: stretch;
 
-.momoDetail{
-    display: flex;
-    padding: 30px;
-    align-items: center;
-    gap: 40px;
-    align-self: stretch;
-    border-radius: 15px;
-    background: var(--hite, #FFF);  
-}
+        .wireTransferDetail{
+            display: flex;
+            padding: 30px;
+            align-items: flex-start;
+            gap: 40px;
+            align-self: stretch;
+            border-radius: 15px;
+            background: var(--hite, #FFF);
 
-.momo-descript{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 20px;
-    flex: 1 0 0;
-}
+            .thumbnail-wireTransfer{
+                width: 100%;
+                height: 557px;
 
-.zaloPay{
-    display: flex;
-    padding: 0px 40px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 50px;
-    align-self: stretch;
-}
+                .img{
+                    width: 77%;
+                    height: 557px;
+                    flex-shrink: 0;
+                    background: url(/Img/image\ 34.png);
 
-.zaloPayDetail{
-    display: flex;
-    padding: 30px;
-    align-items: center;
-    gap: 40px;
-    align-self: stretch;
-    border-radius: 15px;
-    background: var(--hite, #FFF);
-}
+                    .wireTransfer-thumbnail-background{
+                        position: absolute;
+                        margin: 25px 0 0px  230px;
+                        display: flex;
+                        width: 249px;
+                        height: 500px;
+                        padding: 10px;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 10px;
+                        flex-shrink: 0;
+                        border-radius: 30px;
+                        background: rgba(37, 37, 37, 0.60);
+                    
+                        .wireTransfer-img{
+                            display: flex;
+                            padding: 30px;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            gap: 20px;
+                            border-radius: 15px;
+                            background: var(--hite, #FFF);
 
-.zaloPayDescript{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 20px;
-    flex: 1 0 0;
-}
+                            i{
+                                color: #1ABD00;
+                                text-align: center;
+                                font-family: Font Awesome 6 Free;
+                                font-size: 80px;
+                                font-style: normal;
+                                font-weight: 900;
+                                line-height: normal;
+                            }
 
-.exchangeOfGoods{
-    display: flex;
-    padding: 0px 40px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 50px;
-    align-self: stretch;
-}
+                            .text-status{
+                                color: #1ABD00;
+                                text-align: center;
+                                font-family: fw-500;
+                                font-size: 28px;
+                                font-style: normal;
+                                font-weight: 700;
+                                line-height: normal;
+                            }
 
-.exchangeOfGoodsDetail{
-    display: flex;
-    padding: 30px;
-    align-items: center;
-    gap: 40px;
-    align-self: stretch;
-    border-radius: 15px;
-    background: var(--hite, #FFF);
-}
+                            .ok{
+                                color: var(--bleck, #303030);
+                                text-align: center;
+                                font-family: fw-500;
+                                font-size: 28px;
+                                font-style: normal;
+                                font-weight: 700;
+                                line-height: normal;
+                            }
+                        }
+                    }
+                }
+            }
 
-.exchangeOfGoodsDescript{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 20px;
-    flex: 1 0 0;
+            .descript-wireTransfer{
+                width: 100%;
+            }
+        }
+    }
+
+    .momo{
+        display: flex;
+        padding: 0px 40px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 50px;
+        align-self: stretch;
+
+        .momoDetail{
+            display: flex;
+            padding: 30px;
+            align-items: center;
+            gap: 40px;
+            align-self: stretch;
+            border-radius: 15px;
+            background: var(--hite, #FFF);  
+
+            .momo-descript{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 20px;
+                flex: 1 0 0;
+            }
+        }
+    }
+
+    .zaloPay{
+        display: flex;
+        padding: 0px 40px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 50px;
+        align-self: stretch;
+
+        .zaloPayDetail{
+            display: flex;
+            padding: 30px;
+            align-items: center;
+            gap: 40px;
+            align-self: stretch;
+            border-radius: 15px;
+            background: var(--hite, #FFF);
+
+            .zaloPayDescript{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 20px;
+                flex: 1 0 0;
+            }
+        }
+    }
+
+    .exchangeOfGoods{
+        display: flex;
+        padding: 0px 40px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 50px;
+        align-self: stretch;
+
+        .exchangeOfGoodsDetail{
+            display: flex;
+            padding: 30px;
+            align-items: center;
+            gap: 40px;
+            align-self: stretch;
+            border-radius: 15px;
+            background: var(--hite, #FFF);
+
+            .exchangeOfGoodsDescript{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 20px;
+                flex: 1 0 0;
+            }
+        }
+    }
+
 }
