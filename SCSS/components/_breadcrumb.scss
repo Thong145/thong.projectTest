@@ -21,3 +21,9 @@
         }
     }
 }
+
+@include mobile{
+    .breadcrumb-nav{
+        width: 100%;
+    }
+}

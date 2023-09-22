@@ -16,3 +16,34 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+var forEach = function (array, callback, scope) {
+  for (var i = 0; i < array.length; i++) {
+    callback.call(scope, i, array[i]); // passes back stuff we need
+  }
+};
+
+var containers = document.querySelectorAll(".products");
+
+forEach(containers, function(index, value) {
+  value.addEventListener("click", function() {
+    this.classList.toggle("categories-is-shown");
+  });
+});
+
+
+var containers = document.querySelectorAll(".map");
+
+forEach(containers, function(index, value) {
+  value.addEventListener("click", function() {
+    this.classList.toggle("address-is-shown");
+  });
+});
+
+var containers = document.querySelectorAll(".navMobile");
+
+forEach(containers, function(index, value) {
+  value.addEventListener("click", function() {
+    this.classList.toggle("navbar-is-shown");
+  });
+});

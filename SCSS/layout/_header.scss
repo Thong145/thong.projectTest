@@ -1,9 +1,10 @@
 
 .header{
+    width: 100%;
     display: flex;
     padding: 0px 40px;
     align-items: center;
-    gap: 320px;
+    gap: 20px;
     align-self: stretch;
 
     .Logo{
@@ -49,7 +50,7 @@
             display: flex;
             gap: 10px;
             .fa-solid.fa-phone{
-                color: var#303030;
+                color:#303030;
                 font-size: 28px;
                 font-weight: 900;
                 
@@ -105,3 +106,96 @@
     line-height: normal;
 }
 
+@include mobile{
+    body{
+        gap:0;
+    }
+    .header{
+   
+        display: flex;
+        padding: 0px 20px;
+        align-items: center;
+        gap: 30px;
+        align-self: stretch;
+        .Logo{
+            width: 70%;
+            color:#303030;
+            font-size: 24px;
+            font-family: fw-500;
+            font-weight: 400;
+            line-height: normal;
+        }
+        .search{
+            display: none !important;
+            // .text-search{
+            //     display: none !important;
+            // }
+        }
+        
+        .hotline{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 5px;
+            
+            h2{
+                font-size: 18px;
+                font-family: fw-500;
+                color: #303030;
+            }
+    
+            span{
+                display: flex;
+                gap: 5px;
+                .fa-solid.fa-phone{
+                    color: #303030;
+                    font-size: 14px;
+                    font-weight: 900;
+                    
+                }
+                p{
+                    font-family: fw-500;
+                    color: #303030;
+                    font-size: 14px;
+                    font-weight: 900;
+                }
+            }
+        }
+    }
+    
+    
+    .nav{
+       
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        align-items: flex-start;
+        align-self: stretch;
+        background: #162E4D;
+        
+        .fa-solid{
+            &.fa-bars{
+                color: white;
+                font-family: Font Awesome 6 Free;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 1000;
+                line-height: normal;
+                width: 50px;
+            }
+        }
+    
+        .collapse{
+            .navbar-nav{
+                display: flex;
+                flex-direction: column;
+                .nav-item{
+                    width: max-content;
+                    margin-left: 50px;
+                }
+            }
+        }
+    }
+    
+}

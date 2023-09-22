@@ -70,7 +70,7 @@
 }
 
 .category-video{
-    .category-video__background:hover{
+    &__background:hover{
         background-color: white;
         a{
             color: var(--bleck, #303030);
@@ -79,11 +79,131 @@
 }
 
 .videos{
-    .videos__details{
+    &__details{
         a{
             img:hover{
                 transform: scale(1.1);
                 transition: transform .2s;
+            }
+        }
+    }
+}
+
+@include mobile{
+    .products{
+        .categories{
+            transform: translateX(-130%);
+            transition-timing-function: ease-in;
+            transition: 0.2s;
+        }
+        &.categories-is-shown{
+            .categories{
+                transition: 0.25s;
+                transition-timing-function: ease-out;
+                
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+    }
+
+    .map{
+        .address{
+            .departments-list{
+                transform: translateY(-110%);
+                transition-timing-function: ease-in;
+                transition: 0.2s;
+            }
+            
+        }
+        &.address-is-shown{
+                .departments-list{
+                        transition: 0.25s;
+                        transition-timing-function: ease-out;
+                        
+                        transform: translateY(0);
+                        opacity: 1;  
+                }
+            }
+    }
+}
+
+
+.productsMobile{
+    .categories{
+        transform: translateX(-130%);
+        transition-timing-function: ease-in;
+        transition: 0.2s;
+    }
+    &.categories-is-shown{
+        .categories{
+            transition: 0.25s;
+            transition-timing-function: ease-out;
+            
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+}
+
+.mapMobile{
+    .address{
+        .departments-list{
+            transform: translateY(-110%);
+            transition-timing-function: ease-in;
+            transition: 0.2s;
+        }
+        
+    }
+    &.address-is-shown{
+            .departments-list{
+                    transition: 0.25s;
+                    transition-timing-function: ease-out;
+                    
+                    transform: translateY(0);
+                    opacity: 1;  
+            }
+        }
+}
+
+// .navMobile{
+//     .navbar{
+//         .collapse{
+//             // transform: translateY(0);
+//             // transition-timing-function: ease-in;
+//             // transition: 0.2s;
+//             display: none;
+//         }
+        
+//     }
+//     &.navbar-is-shown{
+//             .collapse:hover{
+//                     // transition: 0.25s;
+//                     // transition-timing-function: ease-out;
+                    
+//                     // transform: translateY(110%);
+//                     // opacity: 1;  
+//                      display: block;
+//             }
+//         }
+// }
+
+
+.videoIsViewing{
+    &__timeLines{
+        &__details{
+            &__title{
+                a:hover{
+                    h2{
+                        color: #303030;
+                        font-family: fw-500;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: normal;
+                        align-self: stretch;
+                    }
+                }
             }
         }
     }
