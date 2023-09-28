@@ -85,3 +85,90 @@
         }
     }
 }
+
+@include mobile{
+
+    .news-main{
+        display: flex;
+        flex-direction: column;
+        
+        svg{
+            width: 100%;
+        }
+
+        .mainDetail{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 20px;
+            flex: 1 0 0;
+
+            img{
+                width: 100%;
+            }
+
+            h2{
+                color: #000;
+                font-family: fw-500;
+                font-size: 28px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                align-self: stretch;
+            }
+
+            h3{
+                color: #000;
+                font-family: fw-500;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+            }
+
+            p{
+                color: #000;
+                font-family: fw-500;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 24px; /* 171.429% */
+                align-self: stretch;
+            }
+
+            .seeMore{
+                p{
+                    color: var(--bleck, #303030);
+                    font-family: fw-500;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                }
+            }
+
+            .news-item{
+                .itemList{
+                    .news-content{
+                        .title-list{
+                            a{
+                                color: var(--bleck, #303030);
+                                font-family: fw-500;
+                                font-size: 24px;
+                                font-style: normal;
+                                font-weight: 700;
+                                line-height: normal;
+                            }
+                            
+                        }
+                        .news-time{
+                            display: flex;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

@@ -25,5 +25,10 @@
 @include mobile{
     .breadcrumb-nav{
         width: 100%;
+        padding: 0px 10px;
+        div{
+            display: flex;
+            padding: 10px 10px;
+        }
     }
 }

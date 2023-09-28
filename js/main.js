@@ -40,10 +40,39 @@ forEach(containers, function(index, value) {
   });
 });
 
-var containers = document.querySelectorAll(".navMobile");
+// var containers = document.querySelectorAll("nav");
 
-forEach(containers, function(index, value) {
-  value.addEventListener("click", function() {
-    this.classList.toggle("navbar-is-shown");
+// forEach(containers, function(index, value) {
+//   value.addEventListener("click", function() {
+//     this.classList.toggle(".navbar-nav");
+//   });
+// });
+
+$(document).ready(function () {
+  $(window).scroll(function () { 
+      console.log($(window).scrollTop());
+      if($(window).scrollTop() > 100){
+          $(".nav").addClass("sticky");
+      }else{
+          $(".nav").removeClass("sticky");
+      }
   });
 });
+
+showNav = ()=> {
+  // $(".navbar").addClass("navbarIsShown");
+  $(".fa-solid").on("click", function () {
+    $(".navbar a:gt(0)").toggle(); // 
+  })
+  
+}
+
+showNav();
+
+// showNavbar = () => {
+//   $(".navbar--drop").on("click", function () {
+//     $(".navbar a:gt(0)").toggle();
+//   });
+// }
+
+// showNavbar();

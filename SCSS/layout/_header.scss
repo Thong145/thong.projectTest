@@ -63,11 +63,20 @@
 
 
 .nav{
+    width: 100%;
     display: flex;
     padding: 20px;
     align-items: flex-start;
     align-self: stretch;
     background: #162E4D;
+
+    &.sticky{
+        position: fixed;
+        padding: 0px;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
     
     .fa-solid{
         &.fa-bars{
@@ -82,6 +91,7 @@
     }
 
     .collapse{
+        display: flex;
         .navbar-nav{
             .nav-item{
                 width: max-content;
@@ -98,7 +108,7 @@
     width: 100%;
 }
 
-.nav-item, .navbar-brand{
+.nav-item{
     color: white;
     font-family: fw-500;
     font-size: 18px;
@@ -111,7 +121,7 @@
         gap:0;
     }
     .header{
-   
+        width: 100%;
         display: flex;
         padding: 0px 20px;
         align-items: center;
@@ -166,36 +176,84 @@
     
     
     .nav{
-       
-        display: flex;
-        flex-direction: column;
-        padding: 20px;
+        width: 100%;
+        z-index: 10;
+        // display: flex;
+        // flex-direction: column;
+        padding: 10px;
         align-items: flex-start;
         align-self: stretch;
         background: #162E4D;
         
-        .fa-solid{
-            &.fa-bars{
-                color: white;
-                font-family: Font Awesome 6 Free;
-                font-size: 18px;
-                font-style: normal;
-                font-weight: 1000;
-                line-height: normal;
-                width: 50px;
-            }
-        }
-    
-        .collapse{
-            .navbar-nav{
-                display: flex;
-                flex-direction: column;
-                .nav-item{
-                    width: max-content;
-                    margin-left: 50px;
+        .navbar{
+            .navbar--drop{
+                .fa-solid{
+                    &.fa-bars{
+                        color: white;
+                        font-family: Font Awesome 6 Free;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: normal;
+                        width: 50px;
+                    }
                 }
             }
-        }
-    }
-    
+
+            &.navbarIsShown{
+                .navbar--drop{
+                    .fa-solid{
+                        &.fa-bars{
+                            color: white;
+                            font-family: Font Awesome 6 Free;
+                            font-size: 18px;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: normal;
+                            width: 50px;
+                        }
+                    }
+                }
+
+                .collapse{
+                    width: 100%;
+                    height: 100%;
+                    // display: flex;
+                    // flex-direction: column;
+                    
+                    .navbar-nav{
+                        // display: flex;
+                        // flex-direction: column;
+                        display: none;
+                        // .nav-item{
+                        //     // width: max-content;
+                        //     // margin-left: 50px;
+                            
+                        // }
+                    }
+                }
+                
+            }
+
+            // .collapse{
+            //     width: 100%;
+            //     height: 100%;
+            //     // display: flex;
+            //     // flex-direction: column;
+                
+            //     .navbar-nav{
+            //         // display: flex;
+            //         // flex-direction: column;
+            //         display: none;
+            //         // .nav-item{
+            //         //     // width: max-content;
+            //         //     // margin-left: 50px;
+                        
+            //         // }
+            //     }
+            // }
+
+        } 
+        
+    }   
 }
