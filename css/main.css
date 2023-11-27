@@ -1,9 +1,12 @@
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
   margin: 0;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .navbar {
@@ -304,6 +307,7 @@ body {
   gap: 48px;
 }
 .body .unlock {
+  translate: 0px 0px;
   display: flex;
   align-items: flex-start;
   padding: 0 100px;
@@ -359,6 +363,7 @@ body {
   line-height: 24px; /* 150% */
 }
 .body .achievements {
+  translate: 0px 0px;
   display: flex;
   width: 100%;
   padding: 40px 0px;
@@ -470,6 +475,15 @@ body {
 }
 .body .achievements .counts .row2 .d4 .details h2 {
   margin: 0;
+}
+.body .calender {
+  translate: 0px 0px;
+}
+.body .customers {
+  translate: 0px 0px;
+}
+.body .community-updates {
+  translate: 0px -50px;
 }
 
 .footer img {

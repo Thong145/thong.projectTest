@@ -106,7 +106,7 @@ gsap.to(".achievements", {
         scrub: 1,
         toggleActions: "restart pause reverse none",
     },
-    xPercent:-30,
+    xPercent:30,
     // rotation: 360,
     duration: 1
 });
@@ -134,22 +134,38 @@ gsap.to(".customers", {
         scrub: 1,
         toggleActions: "restart pause reverse none",
     },
-    xPercent:-30,
+    xPercent:30,
     // rotation: 360,
     duration: 1
 });
-gsap.to(".community-updatess", {
+
+
+gsap.from(".community-updates", {
     scrollTrigger:{
-        trigger:".community-updatess",
+        trigger:".community-updates",
         // start: "20px 30%",
         // end:"+=30%",
         // markers:true,
-        scrub: 1,
+        scrub: 2,
         toggleActions: "restart pause reverse none",
     },
-    xPercent:-30,
+    y:100,
     // rotation: 360,
-    duration: 1
+    // duration: 1
+});
+
+gsap.from(".footer", {
+    scrollTrigger:{
+        trigger:".footer",
+        // start: "20px 30%",
+        // end:"+=30%",
+        // markers:true,
+        scrub: 2,
+        // toggleActions: "restart pause reverse none",
+    },
+    // yPercent:-5,
+    // rotation: 360,
+    // duration: 3
 });
 
 // ScrollTrigger.create({
@@ -161,17 +177,4 @@ gsap.to(".community-updatess", {
 //     pin: true,
 //     // pinSpacing: false,
 //     anticipatePin: 1
-// });
-
-// let sections = gsap.utils.toArray(".body");
-// gsap.to(sections,{
-//     xPercent: -100*(sections.length - 1),
-//     ease:"none",
-//     scrollTrigger:{
-//         trigger:".body",
-//         pin: true,
-//         scrub: 1,
-//         snap:1 / (sections.length - 1),
-//         end: ()=>"+="+ document.querySelector(".body").offsetWidth
-//     }
 // });

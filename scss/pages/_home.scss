@@ -5,6 +5,7 @@ html{
 body{
     margin: 0;
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 // .wrap{
 //     width: 100%;
@@ -533,11 +534,12 @@ body{
         translate: 0px 0px;
     }
     .community-updates{
-        translate: 0px 0px;
+        translate: 0px -50px;
     }
 }
 
 .footer{
+    // translate: 0px -50px;
     img{
          width: 100%;
     }
